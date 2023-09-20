@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es-419">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Link Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Nombre de la pagina-->
+    <title>Notaria Juan Pérez González | Contacto</title>
+
+</head>
+
+
+<body>
+
+    <!-- Header-->
+    <header>
+
+        <!-- Baner encabezado-->
+        <div class="numeroNotaria">
+            <h4>Cuarta Notaría de Rapa Nui</h4>
+        </div>
+
+
+        <section class="headerContainer">
+            <!--Membrete-->
+            <div class="membrete">
+
+                <div class="logoMembrete">
+                    <a href="../index.html"><img src="../img/moai.png" alt="Logo Notaria Juan Pérez"></a>
+                </div>
+                <div class="textoMembrete">
+                    <a href="../index.html">
+                        <h1>Juan Pérez González</h1>
+                    </a>
+                    <a href="../index.html">
+                        <h4>Notario Público de Rapa Nui</h4>
+                    </a>
+                </div>
+            </div>
+            <!-- Navbar -->
+            <nav class="headerNav">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/tramites.html"> Trámites </a></li>
+                    <li><a href="../pages/indiceDocumentos.html">Índice de Documentos</a></li>
+                    <li><a href="../pages/enlaces.html">Enlaces</a></li>
+                    <li><a href="../pages/contacto.html"> Contacto </a></li>
+                </ul>
+            </nav>
+        </section>
+
+    </header>
+
+
+    <main>
+        <h2 class="tituloPagina">Contacto</h2>
+
+
+        <!-- <form method="post" name="contactForm" netlify class="formularioContacto"> -->
+        <form name="contactForm" class="formularioContacto">
+
+
+
+            <div class="datosContacto formIzq footercards formDisplay">
+                <h3>¿Cómo te podemos ayudar?</h3>
+                <br>
+                <ul>
+                    <li>
+                        <h4>Contacto</h4>
+                    </li>
+                    <li><img src="../img/location.png" alt="icono ubicacion"> Isla Bonita 555</li>
+                    <li><img src="../img/whatsapp.png" alt="icono whatsapp"> +569 5555 5555</li>
+                    <li><img src="../img/email.png" alt=""> <a
+                            href="mailto:contacto@notariaperez.cl">contacto@notariaperez.cl</a></li>
+                </ul>
+            </div>
+
+            <div class="timbreContacto formDisplay">
+                <img src="../img/moai.png" alt="Logo Notaria Juan Pérez">
+                <h1>Juan Pérez González</h1>
+                <h4>Notario Público de Rapa Nui</h4>
+            </div>
+            </div>
+            </div>
+
+            <div class="formDer formDisplay">
+                <label for="nombre" class="formComp">Tu Nombre *</label>
+                <input type="text" name="nombre" placeholder="Nombre" class="formComp">
+                <label for="correo" class="formComp">Tu correo *</label>
+                <input type="email" name="correo" placeholder="Correo electrónico" class="formComp">
+                <label for="asunto" class="formComp" class="formComp"></label>Asunto</label>
+                <input type="text" name="asunto" placeholder="Asunto" class="formComp">
+                <label for="motivo" class="formComp"></label>Motivo de contacto:</label>
+                <select id="tramiteReq" name="motivo" class="formComp">
+                    <option value="none">Seleccione su Motivo de Consulta</option>
+                    <option value="consulta">Consulta general</option>
+                    <option value="domicilio">Toma de Firma a Domicilio</option>
+                    <option value="agenda">Agendar una hora</option>
+                    <option value="otros">Otros</option>
+                </select>
+                <label for="comentario" class="formComp">Tu Mensaje *</label>
+                <textarea name="comentario" id="comentarios" cols="30" rows="10" placeholder="Envianos tus comentarios"
+                    class="formComp"></textarea>
+                <p class="formComp">Las casillas con * son obligatorias</p>
+                <input type="submit" value="Enviar" name="enviar" id="enviar" class="botones-form">
+                <!-- <input type="reset" value="Reiniciar" name="cancelar" class="botones-form"> -->
+
+                <!-- <button type="submit">Enviar</button> -->
+            </div>
+
+        </form>
+
+    </main>
+
+
+    <footer>
+
+        <Section class="contenedorFooter">
+            <!--Datos de contacto-->
+            <div class="datosContacto footercards">
+
+                <ul>
+                    <li>
+                        <h4>Contacto</h4>
+                    </li>
+                    <li><img src="../img/location.png" alt="icono ubicacion"> Isla Bonita 555</li>
+                    <li><img src="../img/whatsapp.png" alt="icono whatsapp"> +569 5555 5555</li>
+                    <li><img src="../img/email.png" alt=""> <a
+                            href="mailto:contacto@notariaperez.cl">contacto@notariaperez.cl</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Mapa -->
+
+            <div class="mapa footercards">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5381.15116854348!2d-109.43278025405229!3d-27.148870763282453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2scl!4v1692751679811!5m2!1sen!2scl"
+                    width="200" height="150" style="border:0px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Isla Bonita 555</p>
+            </div>
+
+            <!-- Horario -->
+            <div class="horario footercards">
+
+                <ul>
+                    <li>
+                        <h4>Horario de atención</h4>
+                    </li>
+                    <li>Lunes a Viernes</li>
+                    <li>9:30 a 14:00 horas</li>
+
+                </ul>
+            </div>
+            <div class="firma footercards">
+
+                <p>© Gagolabs 2023</p>
+            </div>
+        </Section>
+
+
+        <!-- Navbar -->
+        <!-- <nav id="footerNav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./pages/tramites.html"> Trámites </a></li>
+                <li><a href="./pages/indice-escrituras.html">Índice de Escrituras</a></li>
+                <li><a href="./pages/enlaces.html">Enlaces</a></li>
+                <li><a href="./pages/contacto.html"> Contacto </a></li>
+            </ul>
+        </nav> -->
+
+    </footer>
+
+</body>
+
+</html>

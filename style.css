@@ -1,0 +1,155 @@
+/****** css reset ****/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*** header and nav bar ****/
+.header{
+    border-bottom: 1px solid #E2E8F0;
+    background-color: #575249;
+}
+
+/**** Mi membrete ***/
+.membrete {
+
+    display: grid;
+    padding-left: 30px;
+    grid-template-columns: auto 1fr;
+    /* grid-column-gap: 10px; */
+    align-items: center;
+}
+
+.membrete a img {
+    width: 75px;
+}
+
+.textoMembrete{
+    margin-left: 10px;
+}
+.textoMembrete h1 {
+    color: rgb(225, 171, 24);
+    font-size: xx-large;
+    margin-bottom: 0px;
+}
+
+.textoMembrete h4 {
+    color: rgb(225, 171, 24);
+    margin-bottom: 0px;
+    font-size: medium;
+}
+
+.textoMembrete a {
+    text-decoration: none;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+
+
+
+/****** basic styles for our other elements *****/
+.nav-menu {
+/*     display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.nav-item{
+    display: inline-block;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #575249;
+}
+
+
+.nav-link {
+    background-color: #575249;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(225, 171, 24);
+    font-size: large;
+    
+    margin-left: 1rem;
+}
+
+.nav-link:hover {
+    background-color: rgb(225, 171, 24);
+    color: #575249;
+}
+
+/***** hamburger *******/
+
+.hamburgersa {
+    display: none;
+    font-size: 5rem;
+    color: rgb(225, 171, 24);
+}
+
+
+
+ /******** media queries ***/
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 10rem;
+        flex-direction: column;
+        background-color: #575249;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+
+            display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburgersa {
+        display: block;
+        cursor: pointer;
+    }
+
+}
